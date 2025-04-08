@@ -1,0 +1,23 @@
+<meta charset= "utf-8">
+<script>
+
+alert("Vamos calcular quantos uma pessoa tem agora e terá em 2050! Clique em ok")
+const nascimento = Number(prompt("O ano em que essa pessoa nasceu"))
+const ano_atual = Number(prompt("Informe em que ano estamos"))
+const idade = ano_atual - nascimento
+
+if(idade > 120 || idade < 0){
+   
+    alert("Idade inválida") 
+
+}else{
+
+    alert("A idade da pessoa é: " + idade)
+    const calculo_idade = 2050 - nascimento 
+    alert("Em 2050 essa pessoa terá: " + calculo_idade)
+
+}
+
+
+
+</script>

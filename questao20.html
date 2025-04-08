@@ -1,0 +1,36 @@
+<meta charset= "utf-8">
+<script>
+
+alert("Vamos calcular a área e o perímetro de um Retâgulo! Clique em ok")
+const base = Number(prompt("Informe a Base do Retângulo: "))
+const altura = Number(prompt("Informe a Altura do Retângulo: "))
+const area = base * altura
+const perimetro = base * 2 + altura * 2
+
+if(base <= 0 || altura <= 0 ){
+
+    alert("Retângulo Inválido")
+
+} else if (base == altura){
+
+    alert("Não é um retângulo, é um quadrado. Bom, um quadrado é um tipo de retângulo mas um retângulo não é um tipo de quadrado")
+    alert("A área do Retângulo (Quadrado) é: " + area)
+    alert("O perímetro do Retângulo (Quadrado) é: " + perimetro)
+    
+
+}
+else{
+
+    alert("A área do Retângulo é: " + area)
+    alert("O perímetro do Retângulo é: " + perimetro)
+    
+
+}
+
+
+
+
+
+
+
+</script>

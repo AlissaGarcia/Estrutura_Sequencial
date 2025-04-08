@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Conversor Binário</title>
+</head>
+<body>
+<script>
+    // Mensagem inicial
+    alert("Vamos converter um número inteiro menor que 32 para sua representação em binário! Clique em OK.");
+
+    // Entrada do usuário
+    const numero = Number(prompt("Informe um número inteiro positivo menor que 32"));
+
+    // Validação do número
+    if (numero < 0 || numero >= 32 || isNaN(numero)) {
+        alert("Valor inválido! Informe um número inteiro entre 0 e 31.");
+    } else {
+        let numeroAtual = numero; // Número para realizar os cálculos
+        let binario = "";         // Variável para armazenar o resultado em binário
+
+        // Loop para calcular o binário (divisões sucessivas)
+        while (numeroAtual > 0) {
+            let resto = numeroAtual % 2; // Calcula o resto da divisão por 2 (0 ou 1)
+            binario = resto + binario;   // Adiciona o dígito à esquerda
+            numeroAtual = Math.floor(numeroAtual / 2); // Atualiza o número (divisão por 2)
+        }
+
+        // Se o número for 0, o binário é "0"
+        if (binario === "") {
+            binario = "0";
+        }
+
+        // Exibe o resultado final
+        alert(`O número ${numero} em binário é: ${binario}`);
+    }
+</script>
+</body>
+</html>
+
+
+
+   
+    
+
+
+
+
+
+
+
+</script>

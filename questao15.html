@@ -1,0 +1,29 @@
+<meta charset= "utf-8">
+<script>
+
+alert("Vamos calcular fazer alguns calculos com um número: Ele ao quadrado; Ele ao cubo; Sua raiz quadrade e Sua raiz cubica! Clique em ok")
+const numero = Number(prompt("Informe um número positivo maior que zero!"))
+
+
+if(numero <= 0){
+   
+    alert("Eu disse positivo e maior que zero!!") 
+
+}else{
+
+const quadrado = numero * numero
+const cubo = numero * numero * numero
+const raiz_quad = Math.sqrt(numero)
+const raiz_cub = Math.cbrt(numero)
+
+alert("Vou mostar os valores, clique em ok...")
+alert("O número elevado ao quadrado é: " + quadrado)
+alert("O número elevado ao cubo é: " + cubo)
+alert("A Raiz Quadrada do número é: " +raiz_quad)
+alert("A Raiz Cubica do número é: " +raiz_cub)
+
+}
+
+
+
+</script>

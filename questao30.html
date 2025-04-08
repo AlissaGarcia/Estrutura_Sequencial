@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Calculo da média semestral</title>
+</head>
+<body>
+<script>
+
+    alert("Vamos calcular a média semestral de um Aluno! Clique em OK.");
+    let aluno = prompt("Digite o Nome do(a) Aluno(a)")
+    let nota_prova1 = Number(prompt(`Digite a nota da Primeira prova do Primeiro Bimestre (NOTA 01) do(a) aluno(a) ${aluno}`))
+    if(nota_prova1 < 0 || nota_prova1 > 10){
+
+        alert("Nota Inválida! Insira uma nota entre 0 e 10")
+
+    }else{
+        
+        let nota_prova2 = Number(prompt(`Digite a nota da Segunda prova do Primeiro Bismestre (NOTA 02) do(a) aluno(a) ${aluno}`))
+
+    if(nota_prova2 < 0 || nota_prova2 > 10){
+        
+        alert("Nota Inválida! Insira uma nota entre 0 e 10")
+
+    }else{
+
+        let nota_prova3 = Number(prompt(`Digite a nota da Primeira prova do Segundo Bismestre (NOTA 03) do(a) aluno(a) ${aluno}`))
+    
+    if(nota_prova3 < 0 || nota_prova3 > 10){
+
+        alert("Nota Inválida! Insira uma nota entre 0 e 10")
+
+    }else{
+
+        let nota_prova4 = Number(prompt(`Digite a nota da Segunda prova do Segundo Bismestre (NOTA 04) do(a) aluno(a) ${aluno}`))
+
+ 
+    if(nota_prova4 < 0 || nota_prova4 > 10){
+
+        alert("Nota Inválida! Insira uma nota entre 0 e 10")
+
+    }else{
+
+    let nota_bimest1 = (nota_prova1 + nota_prova2)/2
+    let nota_bimest2 = (nota_prova3 + nota_prova4)/2
+    let semestral = (nota_bimest1 + nota_bimest2) /2
+
+    alert(`As Médias do(a) Aluno(a) ${aluno}, foram: \n Média do Primeiro Bismestre: ${nota_bimest1} \n Média do Segundo Bimestre: ${nota_bimest2} \n Média SEMESTRAL (FINAL): ${semestral}`)
+
+    }
+    }
+
+    }
+
+    }
+
+</script>
+</body>
+</html>
+
+
+
+   
+    
+
+
+
+
+
+
+
+</script>
